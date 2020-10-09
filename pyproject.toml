@@ -1,0 +1,43 @@
+[tool.poetry]
+authors = ["Joey Wilhelm <tarkatronic@gmail.com>"]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT",
+  "Natural Language :: English",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+  "Typing :: Typed",
+]
+description = "Hacktoberfest participation tracker"
+include = ["README.md"]
+keywords = ["hacktoberfest"]
+license = "MIT"
+maintainers = ["Joey Wilhelm <tarkatronic@gmail.com>"]
+name = "tracktoberfest"
+readme = "README.md"
+repository = "https://github.com/godaddy/tracktoberfest/"
+version = "0.1.0"
+
+[tool.poetry.dependencies]
+click = "^7.1.2"
+colorama = "^0.4.3"
+httpx = "^0.15.5"
+iso8601 = "^0.1.13"
+python = "^3.7"
+
+[tool.poetry.dev-dependencies]
+black = "^20.8b1"
+mypy = "^0.782"
+pylint = "^2.6.0"
+pytest = "^5.2"
+
+[tool.poetry.scripts]
+tracktoberfest = "tracktoberfest.main:main"
+
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core>=1.0.0"]
