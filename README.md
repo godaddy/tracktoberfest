@@ -21,3 +21,24 @@ tarkatronic
 ```console
 > pip install tracktoberfest
 ```
+
+## Usage
+
+In order to use this library you will need to expose a environment variable named `GITHUB_TOKEN`
+to do this you can create a `.env` file and export the variable
+
+```bash
+export GITHUB_TOKEN='foo'
+```
+
+before running the application in your terminal run:
+
+```bash
+source .env
+```
+
+After that you can run:
+
+```bash
+tracktoberfest tarkatronic
+```
