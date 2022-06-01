@@ -25,7 +25,7 @@ version = "0.1.0"
 [tool.poetry.dependencies]
 click = "^7.1.2"
 colorama = "^0.4.3"
-httpx = "^0.15.5"
+httpx = ">=0.15.5,<0.24.0"
 iso8601 = "^0.1.13"
 python = "^3.7"
 
